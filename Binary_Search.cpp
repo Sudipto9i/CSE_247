@@ -1,3 +1,5 @@
+///What is Binary Search?
+///Definition: Binary Search finds a target in a sorted array by repeatedly dividing the search range into two halves.
 #include<bits/stdc++.h>
 using namespace std;
 int binarySearch(vector<int>& arr, int target){
