@@ -1,4 +1,4 @@
-/*
+
 1. Algorithm
 Definition: An algorithm is a finite sequence 
 of well-defined steps used to solve a problem.
@@ -186,4 +186,3 @@ Rules for writing good pseudocode
 6. Avoid language-specific syntax unless required.
 Pseudocode vs. actual code: Pseudocode explains the logic; a programming
 language implements it.
-*/
