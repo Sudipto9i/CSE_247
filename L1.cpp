@@ -7,7 +7,8 @@ Five characteristics of an algorithm --- Remember I-O-F-D-E:
  1. I -- Input: accepts zero or more inputs.
  2. O -- Output: produces at least one output.
  3. F -- Finiteness: terminates after a finite number of steps.
- 4. E -- Effectiveness: every step is simple and executable.
+ 4. D -- Definitness: every step is clear and unambiguous.
+ 5. E -- Effectiveness: every step is simple and executable.
 
 // For Example 
 // We just apply this code.
