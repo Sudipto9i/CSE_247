@@ -34,9 +34,11 @@ void mergeArray(vector<int>& a , int low , int mid , int high){
             // Otherwise, copy to the right element.
         }
     }
+    // Copy remaining left elements.
     while(i<left.size()){
         a[k++]=left[i++];
     }
+    // Copy remaining right elements.
     while(j<right.size()){
         a[k++]=right[j++];
     }
@@ -45,17 +47,21 @@ void mergeArray(vector<int>& a , int low , int mid , int high){
 // Merge Sort Function
 // mergeSort() ---> Divides the array recursively 
 void mergeSort(vector<int>& a , int low, int high){
-    if(low<high){
-        int mid = low + (high-low)/2;
-        mergeSort(a, low , mid );
-        mergeSort(a , mid+1 , high);
-        mergeArray(a, low , mid , high);
+    if(low<high){// Base Condition 
+        int mid = low + (high-low)/2;// Calculate middle index 
+        mergeSort(a, low , mid );// Divide the left half 
+        mergeSort(a , mid+1 , high);// Divide the right half 
+        mergeArray(a, low , mid , high);// Merge both halves 
     }
 }
 
 int main(){
     vector<int> a = {5,2,8,1,6};
     mergeSort(a, 0,a.size()-1);
+    // WE call the merge sort function.
+    //  a = Original vector 
+    //  0 = Starting index 
+    // a.size()-1 = Last Index 
     cout<<"Merge Sort: ";
     for(int x : a ){
         cout<<x<<" ";
